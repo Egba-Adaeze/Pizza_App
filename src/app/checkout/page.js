@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
 import { FaCcPaypal } from "react-icons/fa6";
 
 const CheckoutPage = () => {
@@ -18,6 +19,8 @@ const CheckoutPage = () => {
   const total = subtotal - discount;
 
   return (
+    <>
+    <NavBar/>
     <div className="bg-white lg:flex">
       <div className="lg:w-[80%] w-[100%]">
         <table className="w-full  border">
@@ -84,6 +87,9 @@ const CheckoutPage = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 };
 

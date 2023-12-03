@@ -1,6 +1,12 @@
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
+
+
+
 const SignInForm = () => {
   return (
     <>
+    <NavBar/>
       <div className="bg-white text-center pt-[10rem]">
         <h3 className="font-bold">Admin Dashboard</h3>
         <form className="bg-white p-4 rounded-md">
@@ -32,6 +38,7 @@ const SignInForm = () => {
           </button>
         </form>
       </div>
+      <Footer/>
     </>
   );
 };

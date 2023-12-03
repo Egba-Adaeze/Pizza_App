@@ -1,6 +1,6 @@
+import React from 'react'
 import Image from "next/image";
-
-export default function page() {
+export default function footer() {
   return (
     <div className="flex space-x-32 pt-6 bg-orange-100 md:flex-row flex-col">
       <div className="flex space-x-16">
@@ -70,5 +70,5 @@ export default function page() {
         </button>
       </div>
     </div>
-  );
+  )
 }

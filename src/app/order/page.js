@@ -1,8 +1,8 @@
-import NavBar from "../NavBar/page.jsx/index.js";
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
 
 export default function page() {
   return (
@@ -37,7 +37,6 @@ export default function page() {
               width={250}
               height={250}
               priority
-              object-contain
             />
           </div>
           <div className="flex sm:items-center">
@@ -86,11 +85,11 @@ export default function page() {
             <Image
               className="max-h-auto max-h-50 block mx-auto"
               src="/pizza.png"
-              alt="sandwich"
+              alt="pizza"
               width={250}
               height={30}
               priority
-              object-contain
+           
             />
           </div>
           <div className="flex">
@@ -112,12 +111,12 @@ export default function page() {
           <div className="">
             <Image
               className="max-h-auto max-h-50 block mx-auto"
-              src="/product1_rice.jpg"
-              alt="sandwich"
+              src="/product1.jpg"
+              alt="rice"
               width={250}
               height={250}
               priority
-              object-contain
+             
             />
           </div>
           <div className="flex">
@@ -144,7 +143,7 @@ export default function page() {
               width={250}
               height={250}
               priority
-              object-contain
+             
             />
           </div>
           <div className="flex">
@@ -166,12 +165,12 @@ export default function page() {
           <div className="">
             <Image
               className="max-h-auto max-h-50 block mx-auto"
-              src="/product3_leafyp.jpg"
+              src="/product3.jpg"
               alt="sandwich"
               width={250}
               height={250}
               priority
-              object-contain
+         
             />
           </div>
           <div className="flex">
@@ -193,12 +192,12 @@ export default function page() {
           <div className="">
             <Image
               className="max-h-auto max-h-50 block mx-auto"
-              src="/product4_shawama.jpg"
+              src="/product4.jpg"
               alt="sandwich"
               width={250}
               height={250}
               priority
-              object-contain
+             
             />
           </div>
           <div className="flex">
@@ -244,6 +243,7 @@ export default function page() {
           </button>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

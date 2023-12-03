@@ -1,6 +1,10 @@
 import Image from "next/image";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
 function Extra() {
   return (
+    <>
+    <NavBar/>
     <section>
       
       <div className="flex gap-3 md:flex-row flex-col">
@@ -121,6 +125,9 @@ function Extra() {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
+    
   );
 }
 

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { GiFullPizza } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer";
+
 
 
 export default function Page() {
@@ -59,6 +61,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
