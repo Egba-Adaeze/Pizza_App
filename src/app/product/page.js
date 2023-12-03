@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { GiFullPizza } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
+import NavBar from "@/components/NavBar";
+
 
 export default function Page() {
   return (
     <>
+    <NavBar/>
       <div className="flex flex-row bg-white pt-12 gap-8">
         <div>
           <Image
