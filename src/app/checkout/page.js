@@ -1,6 +1,6 @@
 import Image from "next/image";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/footer";
+import NavBar from "@/NavBar/NavBar";
+import Footer from "@/NavBar/footer";
 import { FaCcPaypal } from "react-icons/fa6";
 
 const CheckoutPage = () => {

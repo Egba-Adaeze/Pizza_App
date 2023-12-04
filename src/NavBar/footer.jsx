@@ -34,7 +34,7 @@ export default function footer() {
       <div>
         <span>
           <p className="font-bold text-xl font-serif">SOCIAL MEDIA</p>
-          <div className="flex flex-row space-x-2">
+          <div className="flex flex-row space-x-4">
             <Image
               src="/facebook.png"
               alt="facebook logo"

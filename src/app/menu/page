@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/footer";
+import NavBar from "@/NavBar/NavBar";
+import Footer from "@/NavBar/footer";
 
 export default function page() {
   return (
     <>
     <NavBar />
+    <div className='bg-white'>
       <div className="flex flex-col sm:flex-row justify-between p-6 rounded-md">
         <div className="flex flex-col mb-4 sm:mb-0">
           <button className="border rounded-md p-2 bg-amber-500 border-r-50px ">
@@ -138,7 +139,7 @@ export default function page() {
           <div className="">
             <Image
               className="max-h-auto max-h-50 block mx-auto"
-              src="/product2_chips.jpg"
+              src="/product2.jpg"
               alt="sandwich"
               width={250}
               height={250}
@@ -242,6 +243,7 @@ export default function page() {
             ORDER NOW
           </button>
         </div>
+      </div>
       </div>
       <Footer/>
     </>

@@ -1,3 +1,6 @@
+import NavBar from "@/NavBar/NavBar";
+import Footer from "@/NavBar/footer";
+
 import Image from "next/image";
 import { FaAmazonPay } from "react-icons/fa";
 import { GiHotMeal } from "react-icons/gi";
@@ -20,6 +23,8 @@ const tracking = () => {
   const total = subtotal - discount;
 
   return (
+    <>
+    <NavBar/> 
     <div className="flex w-full bg-white">
       <div className="bg-white  w-full">
        
@@ -79,6 +84,8 @@ const tracking = () => {
         </button>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
