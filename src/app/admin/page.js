@@ -1,5 +1,5 @@
-import NavBar from "@/NavBar/NavBar";
-import Footer from "@/NavBar/footer";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 
 

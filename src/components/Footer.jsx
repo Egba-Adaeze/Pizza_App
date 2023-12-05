@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Image from "next/image";
-export default function footer() {
+export default function Footer() {
   return (
-    <div className="flex space-x-32 pt-6 bg-orange-100 md:flex-row flex-col">
+    <div className="w-full flex gap-x-52 pt-12 bg-orange-100 md:flex-row flex-col">
       <div className="flex space-x-16">
-        <span className="font-serif">
-          <p className="font-bold text-xl font-serif">INFORMATION</p>
+        <span className="font-serif pl-8">
+          <p className="font-bold text-xl font-serif  ">INFORMATION</p>
           <p>Home</p>
           <p>Blog</p>
           <p>About </p>
@@ -13,7 +13,7 @@ export default function footer() {
           <p>Contact Us</p>
         </span>
 
-        <span className="font-serif">
+        <span className="font-serif pl-8">
           <p className="font-bold text-xl font-serif">TOP ITEMS</p>
           <p>Pepperoni</p>
           <p>Swiss Mushroom</p>
@@ -22,7 +22,7 @@ export default function footer() {
           <p>Ham & Cheese</p>
         </span>
 
-        <span>
+        <span className='font-serif pl-12'>
           <p className="font-bold text-xl font-serif">OTHERS</p>
           <p>Checkout</p>
           <p>Cart</p>
@@ -32,8 +32,8 @@ export default function footer() {
         </span>
       </div>
       <div>
-        <span>
-          <p className="font-bold text-xl font-serif">SOCIAL MEDIA</p>
+        <span className=''>
+          <p className="font-bold text-xl font-serif ">SOCIAL MEDIA</p>
           <div className="flex flex-row space-x-4">
             <Image
               src="/facebook.png"

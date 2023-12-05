@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { GiFullPizza } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
-import NavBar from "@/NavBar/NavBar";
-import Footer from "@/NavBar/footer";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 
 
@@ -50,9 +50,9 @@ export default function Page() {
               </div>
 
               <div className="flex flex-row ">
-                <button className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-red-500">
+                <button className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-red-500"> 
                   ADD TO CART
-                </button>
+                </button> 
               </div>
               <div className="border rounded-full">
                 <CiHeart className="w-10 h-7 pt-2" />

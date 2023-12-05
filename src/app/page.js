@@ -1,11 +1,10 @@
 import Image from "next/image";
-//import Menu from "./menu";
-import NavBar from "@/NavBar/NavBar";
-import Footer from "@/NavBar/footer";
-
-
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
+import Menu from "@/components/Menu";
+
 export default function page() {
   return (
     <>
@@ -44,7 +43,7 @@ export default function page() {
                 src="/pizza-onion.png"
                 alt="Pizza"
                 width={100}
-                height={3}
+                height={2}
                 priority
     
               />
@@ -87,7 +86,7 @@ export default function page() {
                 src="/garlic.png"
                 alt="Pizza"
                 width={100}
-                height={50}
+                height={30}
                 priority
                
               />
@@ -98,7 +97,8 @@ export default function page() {
           <h5 className="text-red-600 text-2xl font-bold">Popular Dishes</h5>
           <h2 className="font-bold text-4xl">Browse our Menu</h2>
         </div>
-        {/* <Menu /> */}
+        
+        <Menu />
 
 
         <div className="pl-8 pt-10 mt-6 bg-pink-50 mb-6">

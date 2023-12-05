@@ -1,10 +1,10 @@
+import React from 'react'
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import NavBar from "@/NavBar/NavBar";
-import Footer from "@/NavBar/footer";
-
-export default function page() {
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
+export default function () {
   return (
     <>
     <NavBar />
@@ -247,5 +247,5 @@ export default function page() {
       </div>
       <Footer/>
     </>
-  );
+  )
 }
