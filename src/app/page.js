@@ -20,7 +20,7 @@ export default function page() {
 
 
             <p className="text-4xl pt-5 text-gray-600 mb-8">
-              Your best pizza app, you cannot go wrong with pizzon
+             -- Your best pizza app, you cannot go wrong with pizzon
             </p>
             <button className="border rounded-full px-5 py-3 bg-amber-500 text-white hover:bg-amber-500 border-r-50px mt-8 flex justify-center gap-2 text-md hover:text-gray-800">
               <FaShoppingCart className="text-2xl" />
@@ -97,7 +97,7 @@ export default function page() {
           <h5 className="text-red-600 text-2xl font-bold">Popular Dishes</h5>
           <h2 className="font-bold text-4xl">Browse our Menu</h2>
         </div>
-        
+
         <Menu />
 
 

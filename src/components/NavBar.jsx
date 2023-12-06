@@ -9,6 +9,7 @@ import { FaShoppingCart } from "react-icons/fa";
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   
+  
   return (
     <>
     <header className=" sticky top-0 flex px-4 justify-between z-10 bg-white">
