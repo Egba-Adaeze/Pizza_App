@@ -4,7 +4,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-export default function () {
+export default function page() {
+
   return (
     <>
     <NavBar />

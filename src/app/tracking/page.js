@@ -7,7 +7,8 @@ import { GiHotMeal } from "react-icons/gi";
 import { PiPackageBold } from "react-icons/pi";
 //import { CartItem } from './CartItem';
 
-const tracking = () => {
+export default function page() {
+
   const trackingItems = [
     {
       name: "Burga pizza",
@@ -88,5 +89,3 @@ const tracking = () => {
     </>
   );
 };
-
-export default tracking;

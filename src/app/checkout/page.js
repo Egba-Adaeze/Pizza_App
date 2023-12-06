@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { FaCcPaypal } from "react-icons/fa6";
 
-const CheckoutPage = () => {
+export default function page() {
   const cartItems = [
     {
       name: "Burga pizza",
@@ -93,4 +93,3 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;

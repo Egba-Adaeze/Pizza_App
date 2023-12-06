@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 
 
 
-const SignInForm = () => {
+export default function page() {
+
   return (
     <>
     <NavBar/>
@@ -43,4 +44,4 @@ const SignInForm = () => {
   );
 };
 
-export default SignInForm;
+

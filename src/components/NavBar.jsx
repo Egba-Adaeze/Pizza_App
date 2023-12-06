@@ -1,54 +1,66 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaSistrix } from "react-icons/fa";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaSistrix, FaShoppingCart, FaHamburger } from "react-icons/fa";
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <>
-    <header className=" sticky top-0 flex px-4 justify-between z-10 bg-white">
-      <a href="/">
+    <nav className="sticky top-0 z-10">
+      <header className="flex flex-wrap px-4 items-center justify-between z-10 bg-white">
+        <Link href="/">
+          <Image
+            className="pt-2 "
+            src="/pizza-logo.png"
+            alt="logo"
+            width={40}
+            height={40}
+            priority
+            object-contain
+          />
+        </Link>
         <Image
-          className="pt-2 "
-          src="/pizza-logo.png"
-          alt="logo"
-          width={100}
+          className=""
+          src="/pizza-header.png"
+          alt="pizza header"
+          width={150}
           height={50}
           priority
-          object-contain
-        ></Image>
-      </a>
-      <Image
-        className=""
-        src="/pizza-header.png"
-        alt="pizza header"
-        width={150}
-        height={50}
-        priority
-        
-      />
-      <nav className="flex pt-8 gap-6 font-bold">
-        <ul className="flex gap-6">
-          <Link href="/">HOME</Link> 
-          <Link href="/product">PRODUCTS</Link>
-          <Link href={""}>PAGES</Link>
-          <Link href={""}>BLOG</Link>
-         <Link href={""}>CONTACT</Link>
-        </ul>
-        <FaSistrix className="text-xl" />
-        <FaShoppingCart className="text-blue-600 text-2xl" />
-      </nav>
-    </header>
- 
-    </>
-  )
+        />
+        <button
+          onClick={() => setIsMenuOpen((pre) => !pre)}
+          className="md:hidden inline-flex"
+        >
+          <FaHamburger />
+        </button>
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } pt-8 gap-6 font-bold md:flex`}
+        >
+          <ul className="flex gap-2">
+            <li>
+              <Link href="/">HOME</Link>
+            </li>
+            <li>
+              <Link href="/product">PRODUCTS</Link>
+            </li>
+            <li>
+              <Link href={""}>PAGES</Link>
+            </li>
+            <li>
+              <Link href={""}>BLOG</Link>
+            </li>
+            <li>
+              <Link href={""}>CONTACT</Link>
+            </li>
+          </ul>
+          <FaSistrix className="text-xl" />
+          <FaShoppingCart className="text-blue-600 text-2xl" />
+        </div>
+      </header>
+    </nav>
+  );
 }
-
-
-

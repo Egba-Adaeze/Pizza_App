@@ -8,7 +8,7 @@ import Menu from "@/components/Menu";
 export default function page() {
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <section className="">
         <div className="grid grid-cols-3">
           <div className="pt-10 pl-6 justify-around">
@@ -18,9 +18,8 @@ export default function page() {
               Pinch of <i className="text-red-600">Love</i>
             </h1>
 
-
             <p className="text-4xl pt-5 text-gray-600 mb-8">
-             -- Your best pizza app, you cannot go wrong with pizzon
+              Your best pizza app, you cannot go wrong with pizzon
             </p>
             <button className="border rounded-full px-5 py-3 bg-amber-500 text-white hover:bg-amber-500 border-r-50px mt-8 flex justify-center gap-2 text-md hover:text-gray-800">
               <FaShoppingCart className="text-2xl" />
@@ -35,7 +34,6 @@ export default function page() {
               width={500}
               height={50}
               priority
-            
             />
             <div className="flex pt-6 transform -translate-y-1/6 translate-x-1/2 gap-4 justify-between">
               <Image
@@ -45,7 +43,6 @@ export default function page() {
                 width={100}
                 height={2}
                 priority
-    
               />
               <Image
                 className=" block mx-auto  "
@@ -54,7 +51,6 @@ export default function page() {
                 width={200}
                 height={50}
                 priority
-           
               />
             </div>
           </div>
@@ -69,7 +65,6 @@ export default function page() {
               width={400}
               height={50}
               priority
-           
             />
           </div>
           <div className="pl-9 pt-7">
@@ -88,7 +83,6 @@ export default function page() {
                 width={100}
                 height={30}
                 priority
-               
               />
             </p>
           </div>
@@ -99,7 +93,6 @@ export default function page() {
         </div>
 
         <Menu />
-
 
         <div className="pl-8 pt-10 mt-6 bg-pink-50 mb-6">
           <h5 className="text-red-600 text-2xl font-bold mb-5">Our Strength</h5>
@@ -112,10 +105,9 @@ export default function page() {
               width={200}
               height={50}
               priority
-            
             />
           </div>
-          <div className="flex justify-between pr-5 pb-8">
+          <div className="grid md:grid-cols-4 grid-cols-2 pr-5 pb-8">
             <div>
               <Image
                 className="mb-5"
@@ -140,7 +132,6 @@ export default function page() {
                 width={50}
                 height={50}
                 priority
-           
               />
               <h6 className="font-bold mb-4">All Kinds Of Food</h6>
               <h6>
@@ -156,7 +147,6 @@ export default function page() {
                 width={50}
                 height={50}
                 priority
-              
               />
               <h6 className="font-bold mb-4">All Kinds Of Food</h6>
               <h6>
@@ -190,7 +180,6 @@ export default function page() {
             width={150}
             height={100}
             priority
-          
           />
           <h5 className="text-red-600 text-2xl font-bold">Customer Feedback</h5>
           <h2 className="font-bold text-4xl mt-3 mb-8">Client Testimonials</h2>
@@ -204,14 +193,14 @@ export default function page() {
                   width={150}
                   height={50}
                   priority
-                
                 />
               </div>
               <div className="">
                 <h3 className="font-bold text-xl ml-9 mt-4">Takar Bowa</h3>
                 <p className="text-gray-600 my-6 text-xl ">
-                  I have been ordering <br />my pizza from Pizzon <br />for about two
-                  years now <br /> they have never disappointed me
+                  I have been ordering <br />
+                  my pizza from Pizzon <br />
+                  for about two years now <br /> they have never disappointed me
                 </p>
               </div>
             </div>
@@ -224,14 +213,14 @@ export default function page() {
                   width={150}
                   height={50}
                   priority
-                
                 />
               </div>
               <div className="">
                 <h3 className="font-bold text-xl ml-9 mt-4">Takar Bowa</h3>
                 <p className="text-gray-600 my-6 text-xl ">
-                  I have been ordering <br />my pizza from Pizzon <br />for about two
-                  years now <br /> they have never disappointed me
+                  I have been ordering <br />
+                  my pizza from Pizzon <br />
+                  for about two years now <br /> they have never disappointed me
                 </p>
               </div>
             </div>
@@ -244,14 +233,14 @@ export default function page() {
                   width={150}
                   height={50}
                   priority
-                 
                 />
               </div>
               <div className="">
                 <h3 className="font-bold text-xl ml-9 mt-4">Takar Bowa</h3>
                 <p className="text-gray-600 my-6 text-xl ">
-                  I have been ordering <br />my pizza from Pizzon <br />for about two
-                  years now <br /> they have never disappointed me
+                  I have been ordering <br />
+                  my pizza from Pizzon <br />
+                  for about two years now <br /> they have never disappointed me
                 </p>
               </div>
             </div>
@@ -264,21 +253,21 @@ export default function page() {
                   width={150}
                   height={50}
                   priority
-                 
                 />
               </div>
               <div className="">
                 <h3 className="font-bold text-xl ml-9 mt-4">Takar Bowa</h3>
                 <p className="text-gray-600 my-6 text-xl ">
-                  I have been ordering <br />my pizza from Pizzon <br />for about two
-                  years now <br /> they have never disappointed me
+                  I have been ordering <br />
+                  my pizza from Pizzon <br />
+                  for about two years now <br /> they have never disappointed me
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

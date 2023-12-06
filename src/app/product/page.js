@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 
 
 
-export default function Page() {
+export default function page() {
+
   return (
     <>
     <NavBar/>

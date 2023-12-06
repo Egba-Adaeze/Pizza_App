@@ -1,7 +1,8 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-function Extra() {
+
+export default function page() {
   return (
     <>
     <NavBar/>
@@ -131,4 +132,4 @@ function Extra() {
   );
 }
 
-export default Extra;
+
